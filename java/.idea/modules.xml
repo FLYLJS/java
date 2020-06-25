@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../concurrent programming/concurrent programming.iml" filepath="$PROJECT_DIR$/../concurrent programming/concurrent programming.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ideafirst/ideafirst.iml" filepath="$PROJECT_DIR$/ideafirst/ideafirst.iml" />
+    </modules>
+  </component>
+</project>
