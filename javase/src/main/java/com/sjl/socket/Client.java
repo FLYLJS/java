@@ -1,4 +1,4 @@
-package com.sjl;
+package com.sjl.socket;
 
 import java.io.*;
 import java.net.Socket;

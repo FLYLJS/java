@@ -1,4 +1,4 @@
-package com.sjl;
+package com.sjl.socket;
 
 import java.net.MalformedURLException;
 import java.net.URL;
