@@ -9,6 +9,7 @@ import java.net.Socket;
  * 客户端
  */
 public class Client {
+
     private static OutputStream outputStream;
     private static PrintWriter printWriter;
     private static InputStream inputStream;
