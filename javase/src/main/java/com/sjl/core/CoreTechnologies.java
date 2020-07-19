@@ -2,6 +2,7 @@ package com.sjl.core;
 
 import org.junit.Test;
 
+import java.text.NumberFormat;
 import java.time.LocalDate;
 import java.util.Objects;
 
@@ -79,4 +80,27 @@ public class CoreTechnologies {
         System.out.println("==="+name);
         return Objects.requireNonNullElse(name,"JC");
     }
+
+    /**
+     * NumberFormat
+     */
+    @Test
+    public void test02(){
+//       =================   转换为百分数  15% =================
+        NumberFormat percentInstance = NumberFormat.getPercentInstance();
+        System.out.println("百分比  "+percentInstance.format(0.15));
+//      ==================  转换为货币比例  ¥11.15 =================
+        System.out.println(NumberFormat.getCurrencyInstance().format(11.15));
+
+        double percent = 10.0;
+        tripleValue(percent);
+//      ================   10
+        System.out.println(percent);
+    }
+
+    public static void tripleValue(double v){
+        v = v * 3;
+    }
+
+
 }
