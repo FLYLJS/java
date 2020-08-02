@@ -18,11 +18,8 @@ public class HashMapTest {
 
     public static void main(String[] args) {
         //数组+链表
-        HashMap<String, String> hashMap = new HashMap<String, String>();
+        HashMap<String, String> hashMap = new HashMap<String, String>(12);
         hashMap.put("123","1");
         hashMap.get("123");
-
-
-
     }
 }
