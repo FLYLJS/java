@@ -11,6 +11,6 @@
     <title>Title</title>
 </head>
 <body>
-
+<h1>注销</h1>
 </body>
 </html>
