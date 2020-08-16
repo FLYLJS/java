@@ -14,11 +14,11 @@ public class SSOClientUtil {
     /**
      * 统一认证中心
      */
-    private static String SERVER_URL_PREFIX;
+    public static String SERVER_URL_PREFIX;
     /**
      * 当前客户端地址
      */
-    private static String CLIENT_HOST_URL;
+    public static String CLIENT_HOST_URL;
     static {
         try {
             ssoProperties.load(SSOClientUtil.class.getClassLoader().getResourceAsStream("sso.properties"));
