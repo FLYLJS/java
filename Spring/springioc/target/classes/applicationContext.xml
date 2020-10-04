@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context.xsd
+        ">
+
+    <!--通过在bean上加注解，可以快速地将bean注册到IOC容器内
+        使用注解一定要导入aop的jar包
+            默认单例
+            类名首字母小写
+    -->
+    <!--<context:component-scan base-package="com.sjl"/>-->
+
+    <!--指定不扫描的包 / 扫描的包
+        【type="annotation"】:指定注解的类不扫描
+        expression="org.springframework.stereotype.Controller":注解的全类名
+        【type="assignable"】：指定的类不扫描
+
+        type="aspectj" : aspectj表达式
+        type="custom"  : 自定义一个TypeFilter
+        type="regex" :  正则表达式
+    -->
+    <context:component-scan base-package="com.sjl">
+<!--        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>-->
+<!--        <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>-->
+    </context:component-scan>
+</beans>

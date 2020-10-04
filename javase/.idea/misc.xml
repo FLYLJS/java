@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/../client-crm" />
+    <file type="web" url="file://$PROJECT_DIR$/../sso" />
+    <file type="web" url="file://$PROJECT_DIR$/../ssoserver" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../sso/pom.xml" />
+        <option value="$PROJECT_DIR$/../ssoserver/pom.xml" />
+        <option value="$PROJECT_DIR$/../client-crm/pom.xml" />
+        <option value="$PROJECT_DIR$/../../Spring/springioc/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_14" project-jdk-name="14" project-jdk-type="JavaSDK" />
+</project>

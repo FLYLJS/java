@@ -6,11 +6,16 @@ import javax.swing.*;
 import java.awt.*;
 import java.io.Serializable;
 import java.security.PrivilegedAction;
+import java.sql.SQLOutput;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.Objects;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.FutureTask;
 import java.util.function.Supplier;
 
 
@@ -19,7 +24,7 @@ import java.util.function.Supplier;
  *
  * @author Administrator
  */
-public class LambdaTest {
+public class LambdaTest{
 
     @Test
     public void test01() {
@@ -77,7 +82,36 @@ public class LambdaTest {
         LocalDate day = null;
 /*        Supplier<String> action = () ->
              Objects.requireNonNullElse(username, "");*/
-        System.out.println(Objects.requireNonNullElseGet(username, () -> String.valueOf(Math.random())));
+        System.out.println(Objects.requireNonNullElseGet(username, () -> String.valueOf(Integer.MAX_VALUE*Math.random())));
         System.out.println(Objects.requireNonNullElseGet(day, () -> LocalDate.now()));
     }
+    @Test
+    public void test04(){
+        ThreadTest threadTest = new ThreadTest();
+        threadTest.start();
+        Thread thread = new Thread(new RunnableTest());
+        thread.start();
+
+    }
+
 }
+    class ThreadTest extends Thread{
+        @Override
+        public void run() {
+            System.out.println("hello myThread");
+        }
+    }
+    class RunnableTest implements Runnable{
+        @Override
+        public void run() {
+            System.out.println("hello myRunnable");
+        }
+    }
+    class CallableTest implements Callable<String> {
+        @Override
+        public String call() throws Exception {
+            return "success";
+        }
+    }
+
+

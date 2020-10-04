@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--通过get/set方法赋值-->
+    <bean id = "personone" class="com.sjl.bean.Person">
+        <property name="username" value="张三"/>
+        <property name="age" value="12"/>
+        <property name="address" value="北京"/>
+    </bean>
+    <bean id = "persontwo" class="com.sjl.bean.Person">
+        <property name="username" value="李四"/>
+        <property name="age" value="13"/>
+        <property name="address" value="北京"/>
+    </bean>
+    <bean id="personthree" class="com.sjl.bean.Person">
+        <!--调用有参构造创建对象赋值-->
+        <!--可以省略name属性，但必须根据有参构造参数顺序填写，或者使用index属性设置索引-->
+        <constructor-arg name="username" value="老王"></constructor-arg>
+        <constructor-arg name="address" value="北京"></constructor-arg>
+        <constructor-arg name="age" value="13"></constructor-arg>
+    </bean>
+    <!--通过P名称空间为bean赋值(导入名称空间： xmlns:p="http://www.springframework.org/schema/p" )
+        名称空间是为了防止标签重复的
+    -->
+    <bean id="personfour" class="com.sjl.bean.Person"
+    p:username="小明" p:age="16" p:address="北京">
+    </bean>
+</beans>

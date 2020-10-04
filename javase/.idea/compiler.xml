@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springioc" />
+        <module name="javase" />
+        <module name="client-crm" />
+        <module name="ssoserver" />
+        <module name="sso" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="client-crm" target="1.7" />
+      <module name="javase" target="11" />
+      <module name="springioc" target="9" />
+      <module name="sso" target="1.7" />
+      <module name="ssoserver" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

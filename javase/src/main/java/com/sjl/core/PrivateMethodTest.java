@@ -9,6 +9,7 @@ import java.lang.reflect.Method;
  * @author Administrator
  * @deprecated 反射获取类的私有方法
  */
+@Deprecated
 public class PrivateMethodTest {
     @Test
     public void test01(){

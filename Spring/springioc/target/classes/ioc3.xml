@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--默认按照bean的配置顺序创建bean-->
+    <!--改变bean的创建顺序
+        depends-on:
+    -->
+    <bean id="car" class="com.sjl.bean.Car" depends-on="person"></bean>
+<!--    <bean id="book" class="com.sjl.bean.Book"></bean>-->
+    <bean id="person" class="com.sjl.bean.Person"></bean>
+
+    <!--bean的作用域：
+        制定bean是否单实例
+            默认是单例的
+            prototype:多实例
+                1、容器启动默认不会去创建多实例bean
+                2、获取bean的时候创建这个bean
+                3、每次获取都会创建新的实例
+            singleton:单实例(默认)
+                1、在容器启动完成之前就已经创建好对象，保存在容器中
+                2、任何获取都是获取的之前创建的在容器中的bean
+    -->
+    <bean id="book" class="com.sjl.bean.Book" scope="prototype"></bean>
+
+    <!--工厂模式创建对象
+        都一个专门创建对象的类，这个类就是工厂
+            静态工厂：工厂本身不用创建对象
+            实例工厂：工厂本身需要创建；  new 工厂类();
+    -->
+    <!--静态工厂-->
+    <bean id="airPlane01" class="com.sjl.factory.AirPlaneStaticFactory"
+          factory-method="createAirplane">
+        <!--为方法指定参数-->
+        <constructor-arg value="青禾"/>
+    </bean>
+
+    <!--实例工厂-->
+    <bean id="airPlaneInstanceFactory" class="com.sjl.factory.AirPlaneInstanceFactory"/>
+    <!--factory-bean 指定当前bean使用哪个工厂-->
+    <bean id="airPlane02" class="com.sjl.bean.AirPlane"
+          factory-bean="airPlaneInstanceFactory"
+          factory-method="createAirplane">
+        <constructor-arg value="江"/>
+    </bean>
+
+    <!--FactoryBean
+        spring认可的工厂类
+        ioc容器启动时，不会创建实例，只会在获取时才会创建实例
+    -->
+    <bean id="myFactoryBean" class="com.sjl.factory.MyFactoryBeanImpl"/>
+
+</beans>

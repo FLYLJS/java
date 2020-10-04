@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/util
+       http://www.springframework.org/schema/util/spring-util-4.0.xsd">
+
+    <bean id="car01" class="com.sjl.bean.Car">
+        <property name="carName" value="法拉利"/>
+        <property name="color" value="red"/>
+        <property name="price" value="2000000"/>
+    </bean>
+    <!--为各种属性赋值-->
+    <bean id="person01" class="com.sjl.bean.Person">
+        <!--复杂的赋值-->
+        <property name="username" >
+            <null></null>
+        </property>
+        <!--引用bean-->
+<!--        <property name="car" ref="car01"/>-->
+        <property name="car">
+            <bean id="car" class="com.sjl.bean.Car">
+                <property name="carName" value="五菱宏光"/>
+            </bean>
+        </property>
+    </bean>
+    <bean id="book1" class="com.sjl.bean.Book" p:bookName="java编程思想"/>
+    <bean id="person02" class="com.sjl.bean.Person">
+        <!--为list类型赋值-->
+        <property name="books">
+            <list>
+                <bean class="com.sjl.bean.Book" p:bookName="java核心技术" p:author="凯·S.霍斯特曼"/>
+                <!--引用一个外部元素-->
+                <ref bean="book1"/>
+            </list>
+        </property>
+        <property name="maps">
+            <map>
+                <!--一个entry代表一个键值对-->
+                <entry key="key01" value="小丽"></entry>
+                <entry key="key02" value="18"></entry>
+                <!--值为引用的一个bean-->
+                <entry key="key03" value-ref="book1"/>
+                <entry key="key04">
+                    <bean class="com.sjl.bean.Car">
+                        <property name="carName" value="玛莎拉蒂"/>
+                    </bean>
+                </entry>
+                <entry key="key05">
+                    <map>
+                        <entry key="key05" value="map中的map"/>
+                    </map>
+                </entry>
+            </map>
+        </property>
+        <property name="properties">
+            <props>
+                <!--所有的K=V都是String类型的-->
+                <prop key="username">root</prop>
+                <prop key="password">123456</prop>
+            </props>
+        </property>
+    </bean>
+
+    <!--util名称空间创建集合类型的bean，方便别人引用-->
+    <bean id="person03" class="com.sjl.bean.Person">
+        <property name="maps" ref="myMap"/>
+    </bean>
+    <!--util名称空间创建的-->
+    <util:map id="myMap">
+        <entry key="utilMapKey" value="utilMapValue"/>
+    </util:map>
+    <util:list id="myList">
+        <list/>
+        <value>12</value>
+        <bean class="com.sjl.bean.Person"/>
+        <ref bean="myMap"/>
+    </util:list>
+
+    <!--级联属性赋值  属性的属性-->
+    <bean id="person04" class="com.sjl.bean.Person">
+        <property name="car" ref="car01"/>
+        <!--为car赋值时，改变car的属性-->
+        <property name="car.price" value="20000000"/>
+    </bean>
+
+    <!--通过继承实现bean配置信息的重用-->
+    <!--abstract="true" 设置当前bean为抽象的，不能从容器中获取-->
+    <bean id="person05" class="com.sjl.bean.Person" abstract="true">
+        <property name="username" value="王二"/>
+        <property name="age" value="23"/>
+        <property name="address" value="北京"/>
+     </bean>
+    <!--parent属性：制定当前bean的配置继承于哪个-->
+    <bean id="person06" class="com.sjl.bean.Person" parent="person05">
+        <property name="car" ref="car01"/>
+    </bean>
+</beans>
