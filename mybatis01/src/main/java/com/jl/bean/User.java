@@ -1,6 +1,8 @@
 package com.jl.bean;
 
 
+import java.util.List;
+
 public class User {
 
   private long id;
@@ -9,6 +11,27 @@ public class User {
   private String sex;
   private String address;
 
+  private List<Long> ids;
+  /**
+   * 一对多关系映射，主表实体应该包含子表实体的引用
+   */
+  private List<Account> account;
+
+  public List<Account> getAccount() {
+    return account;
+  }
+
+  public void setAccount(List<Account> account) {
+    this.account = account;
+  }
+
+  public List<Long> getIds() {
+    return ids;
+  }
+
+  public void setIds(List<Long> ids) {
+    this.ids = ids;
+  }
 
   public long getId() {
     return id;
@@ -62,6 +85,7 @@ public class User {
             ", age=" + age +
             ", sex='" + sex + '\'' +
             ", address='" + address + '\'' +
+//            ", account=" + account +
             '}';
   }
 }

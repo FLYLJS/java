@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jl.dao.IAccount">
+   <resultMap id="accountMap" type="com.jl.bean.Account"/>
+    <!--定义封装account和user对象的resultMap-->
+    <resultMap id="accountUserMap" type="com.jl.bean.Account">
+        <id property="id" column="aid"></id>
+        <result property="uid" column="uid"/>
+        <result property="money" column="money"/>
+        <!--配置封装user的内容-->
+        <association property="user" column="user" javaType="com.jl.bean.User">
+            <id property="id" column="id"/>
+            <result property="username" column="username"/>
+            <result property="address" column="address"/>
+            <result property="sex" column="sex"/>
+            <result property="age" column="age"/>
+        </association>
+    </resultMap>
+    <sql id="defaultSql" >
+        select * from account
+    </sql>
+    <select id="findAll" resultMap="accountUserMap">
+        select  u.*,a.id aid,a.uid uid ,a.money  from  account a ,user u where   u.id = a.uid
+    </select>
+    
+    <!--查询所有账户并且包含账户用户信息-->
+    <select id="findAllAccount" resultType="com.jl.bean.AccountUser">
+       select  a.*,u.username,u.address from user u inner join account a on u.id = a.uid
+    </select>
+</mapper>

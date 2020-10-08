@@ -3,6 +3,17 @@
     PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
     "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
+
+    <typeAliases>
+        <!--
+        单个别名的定义
+        alias：别名，type：别名映射的类型  -->
+        <typeAlias type="com.jl.bean.User" alias="user"/>
+        <!-- 批量别名定义
+        指定包路径，自动扫描包下边的pojo，定义别名，别名默认为类名（首字母小写或大写）
+         -->
+        <!--<package name="com.jl.bean.User"/>-->
+    </typeAliases>
     <!--配置环境-->
     <environments default="mysql">
         <environment id="mysql">
@@ -10,15 +21,17 @@
             <!--连接池-->
             <dataSource type="POOLED">
                 <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
-                <property name="url" value="jdbc:mysql://127.0.0.1:3306/ssm"/>
+                <property name="url" value="jdbc:mysql://127.0.0.1:3306/ssm?serverTimezone=UTC"/>
                 <property name="username" value="root"/>
                 <property name="password" value="123456"/>
             </dataSource>
         </environment>
     </environments>
+
+
     <!--映射配置文件位置-->
     <mappers>
         <mapper resource="com/jl/dao/IUserDao.xml"/>
+        <mapper resource="com/jl/dao/IAccountDao.xml"/>
     </mappers>
-
 </configuration>

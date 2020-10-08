@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jl.dao.IUserDao">
+    <resultMap id="userMap" type="com.jl.bean.User"/>
+    <!--定义user的resultMap-->
+    <resultMap id="userAccountMap" type="com.jl.bean.User">
+        <id property="id" column="id"/>
+        <result property="username" column="username"/>
+        <result property="address" column="address"/>
+        <result property="sex" column="sex"/>
+        <result property="age" column="age"/>
+        <!--
+            配置user对象中的account对象
+        -->
+        <collection property="account" ofType="com.jl.bean.Account">
+            <id column="aid" property="id"/>
+            <result property="uid" column="uid"/>
+            <result property="money" column="money"/>
+        </collection>
+    </resultMap>
+    <sql id="defaultSQL" >
+        SELECT * FROM user 
+    </sql>
+    
+    <select id="findAll" resultMap="userAccountMap">
+--         select * from user
+        select  u.*,a.money from user u left join  account a on u.id = a.uid
+    </select>
+
+    <select id="findById" resultMap="userMap" parameterType="INT">
+        select * from  user where id = #{id}
+    </select>
+
+    <select id="findByName" parameterType="String" resultMap="userMap">
+        select  *from user where username like concat('%',#{username},'%')
+    </select>
+
+    <select id="countTotal" resultType="int" >
+        select  count(1) from user
+    </select>
+
+    <!--根据条件查询-->
+<!--    <select id="findByCondition" resultMap="userMap" parameterType="user">-->
+<!--        select * from user where 1 = 1-->
+<!--            <if test="username != null">-->
+<!--                and  username = #{username}-->
+<!--            </if>-->
+<!--            <if test="sex != null">-->
+<!--                and sex = #{sex}-->
+<!--            </if>-->
+<!--    </select>-->
+    <select id="findByCondition" resultMap="userMap" parameterType="user">
+        select * from user
+        <where>
+            <if test="username != null">
+                username = #{username}
+            </if>
+            <if test="sex != null">
+                and sex = #{sex}
+            </if>
+        </where>
+    </select>
+    <!--根据id集合实现查询用户列表-->
+    <select id="findUserInIds" resultMap="userMap" parameterType="user">
+--         select *from user
+        <include refid="defaultSQL"></include>
+            <where>
+                <if test="ids != null and ids.size() >0">
+                    <foreach collection="ids" open=" and id in(" close=")" item="id" separator=",">
+                        #{id}
+                    </foreach>
+                </if>
+            </where>
+    </select>
+</mapper>

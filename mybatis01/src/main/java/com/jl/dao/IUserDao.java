@@ -26,5 +26,27 @@ public interface IUserDao {
      * @return
      */
     List<User> findByName(String username);
-//    User findByName(String username);
+
+    /**
+     * 统计总的数量
+     *
+     * @return
+     */
+    Integer countTotal();
+
+    /**
+     * 根据条件查询
+     *
+     * @param user
+     * @return
+     */
+    List<User> findByCondition(User user);
+
+    /**
+     *
+     * <foreach></foreach>
+     * @param user
+     * @return
+     */
+    List<User> findUserInIds(User user);
 }

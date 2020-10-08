@@ -1,413 +1,136 @@
-DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 272678513 to pool.
+INFO main UserTest - 关流
 DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
 DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
 DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
 DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
 DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
 DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 405215542.
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@18271936]
-DEBUG main com.jl.dao.IUserDao.findAll - ==>  Preparing: select * from USER 
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 88646218.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@548a24a]
+DEBUG main com.jl.dao.IUserDao.findAll - ==>  Preparing: -- select * from user select u.*,a.money from user u left join account a on u.id = a.uid where uid = 3 
 DEBUG main com.jl.dao.IUserDao.findAll - ==> Parameters: 
-DEBUG main com.jl.dao.IUserDao.findAll - <==      Total: 4
+DEBUG main com.jl.dao.IUserDao.findAll - <==      Total: 2
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@548a24a]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@548a24a]
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 88646218 to pool.
+INFO main UserTest - 关流
 DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
 DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
 DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
 DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
 DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
 DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 2050339061.
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@7a35b0f5]
-DEBUG main com.jl.dao.IUserDao.findAll - ==>  Preparing: select * from USER 
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 272678513.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1040be71]
+DEBUG main com.jl.dao.IUserDao.findAll - ==>  Preparing: -- select * from user select u.*,a.money from user u left join account a on u.id = a.uid 
 DEBUG main com.jl.dao.IUserDao.findAll - ==> Parameters: 
-DEBUG main com.jl.dao.IUserDao.findAll - <==      Total: 4
+DEBUG main com.jl.dao.IUserDao.findAll - <==      Total: 5
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1040be71]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1040be71]
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 272678513 to pool.
+INFO main UserTest - 关流
 DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
 DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
 DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
 DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
 DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
 DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1000966072.
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@3ba987b8]
-DEBUG main com.jl.dao.IUserDao.findAll - ==>  Preparing: select * from USER 
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 88646218.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@548a24a]
+DEBUG main com.jl.dao.IUserDao.findAll - ==>  Preparing: -- select * from user select u.*,a.money from user u left join account a on u.id = a.uid 
 DEBUG main com.jl.dao.IUserDao.findAll - ==> Parameters: 
-DEBUG main com.jl.dao.IUserDao.findAll - <==      Total: 4
+DEBUG main com.jl.dao.IUserDao.findAll - <==      Total: 5
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@548a24a]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@548a24a]
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 88646218 to pool.
+INFO main UserTest - 关流
 DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
 DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
 DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
 DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
 DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
 DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1594138273.
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5f049ea1]
-DEBUG main com.jl.dao.IUserDao.findAll - ==>  Preparing: select * from USER 
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 88646218.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@548a24a]
+DEBUG main com.jl.dao.IUserDao.findAll - ==>  Preparing: -- select * from user select u.*,a.money from user u left join account a on u.id = a.uid 
 DEBUG main com.jl.dao.IUserDao.findAll - ==> Parameters: 
-DEBUG main com.jl.dao.IUserDao.findAll - <==      Total: 4
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5f049ea1]
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5f049ea1]
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 1594138273 to pool.
+DEBUG main com.jl.dao.IUserDao.findAll - <==      Total: 5
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@548a24a]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@548a24a]
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 88646218 to pool.
+INFO main UserTest - 关流
 DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
 DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
 DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
 DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
 DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
 DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 384515747.
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@16eb3ea3]
-DEBUG main com.jl.dao.IUserDao.findById - ==>  Preparing: SELECT *FROM USER WHERE ID = ? 
-DEBUG main com.jl.dao.IUserDao.findById - ==> Parameters: 2(Integer)
-DEBUG main com.jl.dao.IUserDao.findById - <==      Total: 1
-INFO main MybatisTest - User{id=2, username='rose', age=22, sex='女', address='上海'}
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@16eb3ea3]
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@16eb3ea3]
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 384515747 to pool.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 88646218.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@548a24a]
+DEBUG main com.jl.dao.IUserDao.findAll - ==>  Preparing: -- select * from user select u.*,a.money from user u left join account a on u.id = a.uid 
+DEBUG main com.jl.dao.IUserDao.findAll - ==> Parameters: 
+DEBUG main com.jl.dao.IUserDao.findAll - <==      Total: 7
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@548a24a]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@548a24a]
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 88646218 to pool.
+INFO main UserTest - 关流
 DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
 DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
 DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
 DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
 DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
 DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 657736958.
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@273444fe]
-DEBUG main com.jl.dao.IUserDao.findById - ==>  Preparing: SELECT *FROM USER WHERE ID = ? 
-DEBUG main com.jl.dao.IUserDao.findById - ==> Parameters: 2(Integer)
-DEBUG main com.jl.dao.IUserDao.findById - <==      Total: 1
-INFO main MybatisTest - User{id=2, username='rose', age=22, sex='女', address='上海'}
-DEBUG main com.jl.dao.IUserDao.findByName - ==>  Preparing: select *from user where username like ? 
-DEBUG main com.jl.dao.IUserDao.findByName - ==> Parameters: ck(String)
-DEBUG main com.jl.dao.IUserDao.findByName - <==      Total: 0
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@273444fe]
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@273444fe]
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 657736958 to pool.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 88646218.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@548a24a]
+DEBUG main com.jl.dao.IUserDao.findAll - ==>  Preparing: -- select * from user select u.*,a.money from user u left join account a on u.id = a.uid 
+DEBUG main com.jl.dao.IUserDao.findAll - ==> Parameters: 
+DEBUG main com.jl.dao.IUserDao.findAll - <==      Total: 7
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@548a24a]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@548a24a]
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 88646218 to pool.
+INFO main UserTest - 关流
 DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
 DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
 DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
 DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
 DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
 DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 657736958.
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@273444fe]
-DEBUG main com.jl.dao.IUserDao.findById - ==>  Preparing: SELECT *FROM USER WHERE ID = ? 
-DEBUG main com.jl.dao.IUserDao.findById - ==> Parameters: 2(Integer)
-DEBUG main com.jl.dao.IUserDao.findById - <==      Total: 1
-INFO main MybatisTest - User{id=2, username='rose', age=22, sex='女', address='上海'}
-DEBUG main com.jl.dao.IUserDao.findByName - ==>  Preparing: select *from user where username like ? 
-DEBUG main com.jl.dao.IUserDao.findByName - ==> Parameters: jack(String)
-DEBUG main com.jl.dao.IUserDao.findByName - <==      Total: 1
-INFO main MybatisTest - User{id=1, username='jack', age=24, sex='男', address='北京'}
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@273444fe]
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@273444fe]
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 657736958 to pool.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 88646218.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@548a24a]
+DEBUG main com.jl.dao.IUserDao.findAll - ==>  Preparing: -- select * from user select u.*,a.money from user u left join account a on u.id = a.uid 
+DEBUG main com.jl.dao.IUserDao.findAll - ==> Parameters: 
+DEBUG main com.jl.dao.IUserDao.findAll - <==      Total: 8
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@548a24a]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@548a24a]
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 88646218 to pool.
+INFO main UserTest - 关流
 DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
 DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
 DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
 DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
 DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
 DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 657736958.
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@273444fe]
-DEBUG main com.jl.dao.IUserDao.findById - ==>  Preparing: SELECT *FROM USER WHERE ID = ? 
-DEBUG main com.jl.dao.IUserDao.findById - ==> Parameters: 2(Integer)
-DEBUG main com.jl.dao.IUserDao.findById - <==      Total: 1
-INFO main MybatisTest - User{id=2, username='rose', age=22, sex='女', address='上海'}
-DEBUG main com.jl.dao.IUserDao.findByName - ==>  Preparing: select *from user where username like ? 
-DEBUG main com.jl.dao.IUserDao.findByName - ==> Parameters: jack(String)
-DEBUG main com.jl.dao.IUserDao.findByName - <==      Total: 1
-INFO main MybatisTest - User{id=1, username='jack', age=24, sex='男', address='北京'}
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@273444fe]
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@273444fe]
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 657736958 to pool.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1062186835.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@3f4faf53]
+DEBUG main com.jl.dao.IUserDao.findAll - ==>  Preparing: -- select * from user select u.*,a.money from user u left join account a on u.id = a.uid 
+DEBUG main com.jl.dao.IUserDao.findAll - ==> Parameters: 
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@3f4faf53]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@3f4faf53]
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 1062186835 to pool.
+INFO main UserTest - 关流
 DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
 DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
 DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
 DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
 DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
 DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 657736958.
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@273444fe]
-DEBUG main com.jl.dao.IUserDao.findById - ==>  Preparing: SELECT *FROM USER WHERE ID = ? 
-DEBUG main com.jl.dao.IUserDao.findById - ==> Parameters: 2(Integer)
-DEBUG main com.jl.dao.IUserDao.findById - <==      Total: 1
-INFO main MybatisTest - User{id=2, username='rose', age=22, sex='女', address='上海'}
-DEBUG main com.jl.dao.IUserDao.findByName - ==>  Preparing: select *from user where username like ? 
-DEBUG main com.jl.dao.IUserDao.findByName - ==> Parameters: ja(String)
-DEBUG main com.jl.dao.IUserDao.findByName - <==      Total: 0
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@273444fe]
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@273444fe]
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 657736958 to pool.
-DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1428475041.
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5524cca1]
-DEBUG main com.jl.dao.IUserDao.findById - ==>  Preparing: SELECT *FROM USER WHERE ID = ? 
-DEBUG main com.jl.dao.IUserDao.findById - ==> Parameters: 2(Integer)
-DEBUG main com.jl.dao.IUserDao.findById - <==      Total: 1
-INFO main MybatisTest - User{id=2, username='rose', age=22, sex='女', address='上海'}
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5524cca1]
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5524cca1]
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 1428475041 to pool.
-DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1428475041.
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5524cca1]
-DEBUG main com.jl.dao.IUserDao.findById - ==>  Preparing: SELECT *FROM USER WHERE ID = ? 
-DEBUG main com.jl.dao.IUserDao.findById - ==> Parameters: 2(Integer)
-DEBUG main com.jl.dao.IUserDao.findById - <==      Total: 1
-INFO main MybatisTest - User{id=2, username='rose', age=22, sex='女', address='上海'}
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5524cca1]
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5524cca1]
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 1428475041 to pool.
-DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 384515747.
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@16eb3ea3]
-DEBUG main com.jl.dao.IUserDao.findById - ==>  Preparing: SELECT *FROM USER WHERE ID = ? 
-DEBUG main com.jl.dao.IUserDao.findById - ==> Parameters: 2(Integer)
-DEBUG main com.jl.dao.IUserDao.findById - <==      Total: 1
-INFO main MybatisTest - User{id=2, username='rose', age=22, sex='女', address='上海'}
-DEBUG main com.jl.dao.IUserDao.findByName - ==>  Preparing: -- select *from user where username like ? select *from user where username like '%'?'%' 
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@16eb3ea3]
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@16eb3ea3]
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 384515747 to pool.
-DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 657736958.
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@273444fe]
-DEBUG main com.jl.dao.IUserDao.findById - ==>  Preparing: SELECT *FROM USER WHERE ID = ? 
-DEBUG main com.jl.dao.IUserDao.findById - ==> Parameters: 2(Integer)
-DEBUG main com.jl.dao.IUserDao.findById - <==      Total: 1
-INFO main MybatisTest - User{id=2, username='rose', age=22, sex='女', address='上海'}
-DEBUG main com.jl.dao.IUserDao.findByName - ==>  Preparing: -- select *from user where username like ? select * from user where username like '%'+ ? +'%' 
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@273444fe]
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@273444fe]
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 657736958 to pool.
-DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 657736958.
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@273444fe]
-DEBUG main com.jl.dao.IUserDao.findById - ==>  Preparing: SELECT *FROM USER WHERE ID = ? 
-DEBUG main com.jl.dao.IUserDao.findById - ==> Parameters: 2(Integer)
-DEBUG main com.jl.dao.IUserDao.findById - <==      Total: 1
-INFO main MybatisTest - User{id=2, username='rose', age=22, sex='女', address='上海'}
-DEBUG main com.jl.dao.IUserDao.findByName - ==>  Preparing: -- select *from user where username like ? select * from user where username like '%?%' 
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@273444fe]
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@273444fe]
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 657736958 to pool.
-DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1428475041.
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5524cca1]
-DEBUG main com.jl.dao.IUserDao.findById - ==>  Preparing: SELECT *FROM USER WHERE ID = ? 
-DEBUG main com.jl.dao.IUserDao.findById - ==> Parameters: 2(Integer)
-DEBUG main com.jl.dao.IUserDao.findById - <==      Total: 1
-INFO main MybatisTest - User{id=2, username='rose', age=22, sex='女', address='上海'}
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5524cca1]
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5524cca1]
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 1428475041 to pool.
-DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 443934570.
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1a75e76a]
-DEBUG main com.jl.dao.IUserDao.findById - ==>  Preparing: SELECT *FROM USER WHERE ID = ? 
-DEBUG main com.jl.dao.IUserDao.findById - ==> Parameters: 2(Integer)
-DEBUG main com.jl.dao.IUserDao.findById - <==      Total: 1
-INFO main MybatisTest - User{id=2, username='rose', age=22, sex='女', address='上海'}
-DEBUG main com.jl.dao.IUserDao.findByName - ==>  Preparing: -- select *from user where username like ? select * from user where username like '%jac%' 
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1a75e76a]
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1a75e76a]
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 443934570 to pool.
-DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1683662486.
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@645aa696]
-DEBUG main com.jl.dao.IUserDao.findById - ==>  Preparing: SELECT *FROM USER WHERE ID = ? 
-DEBUG main com.jl.dao.IUserDao.findById - ==> Parameters: 2(Integer)
-DEBUG main com.jl.dao.IUserDao.findById - <==      Total: 1
-INFO main MybatisTest - User{id=2, username='rose', age=22, sex='女', address='上海'}
-DEBUG main com.jl.dao.IUserDao.findByName - ==>  Preparing: -- select *from user where username like ? select * from user where username like concat ('%',?,'%') 
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@645aa696]
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@645aa696]
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 1683662486 to pool.
-DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1528923159.
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5b218417]
-DEBUG main com.jl.dao.IUserDao.findById - ==>  Preparing: SELECT *FROM USER WHERE ID = ? 
-DEBUG main com.jl.dao.IUserDao.findById - ==> Parameters: 2(Integer)
-DEBUG main com.jl.dao.IUserDao.findById - <==      Total: 1
-INFO main MybatisTest - User{id=2, username='rose', age=22, sex='女', address='上海'}
-DEBUG main com.jl.dao.IUserDao.findByName - ==>  Preparing: -- select *from user where username like ? select * from user where username like CONCAT('%',?,'%') 
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5b218417]
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5b218417]
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 1528923159 to pool.
-DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 657736958.
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@273444fe]
-DEBUG main com.jl.dao.IUserDao.findById - ==>  Preparing: SELECT *FROM USER WHERE ID = ? 
-DEBUG main com.jl.dao.IUserDao.findById - ==> Parameters: 2(Integer)
-DEBUG main com.jl.dao.IUserDao.findById - <==      Total: 1
-INFO main MybatisTest - User{id=2, username='rose', age=22, sex='女', address='上海'}
-DEBUG main com.jl.dao.IUserDao.findByName - ==>  Preparing: -- select *from user where username like ? select * from user where username like CONCAT('%',?,'%') 
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@273444fe]
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@273444fe]
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 657736958 to pool.
-DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 657736958.
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@273444fe]
-DEBUG main com.jl.dao.IUserDao.findById - ==>  Preparing: SELECT *FROM USER WHERE ID = ? 
-DEBUG main com.jl.dao.IUserDao.findById - ==> Parameters: 2(Integer)
-DEBUG main com.jl.dao.IUserDao.findById - <==      Total: 1
-INFO main MybatisTest - User{id=2, username='rose', age=22, sex='女', address='上海'}
-DEBUG main com.jl.dao.IUserDao.findByName - ==>  Preparing: -- select *from user where username like ? select * from user where username like CONCAT('%',?,'%') 
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@273444fe]
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@273444fe]
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 657736958 to pool.
-DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 657736958.
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@273444fe]
-DEBUG main com.jl.dao.IUserDao.findById - ==>  Preparing: SELECT *FROM USER WHERE ID = ? 
-DEBUG main com.jl.dao.IUserDao.findById - ==> Parameters: 2(Integer)
-DEBUG main com.jl.dao.IUserDao.findById - <==      Total: 1
-INFO main MybatisTest - User{id=2, username='rose', age=22, sex='女', address='上海'}
-DEBUG main com.jl.dao.IUserDao.findByName - ==>  Preparing: -- select *from user where username like ? select * from user where username like CONCAT('%',?,'%') 
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@273444fe]
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@273444fe]
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 657736958 to pool.
-DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 657736958.
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@273444fe]
-DEBUG main com.jl.dao.IUserDao.findById - ==>  Preparing: SELECT *FROM USER WHERE ID = ? 
-DEBUG main com.jl.dao.IUserDao.findById - ==> Parameters: 2(Integer)
-DEBUG main com.jl.dao.IUserDao.findById - <==      Total: 1
-INFO main MybatisTest - User{id=2, username='rose', age=22, sex='女', address='上海'}
-DEBUG main com.jl.dao.IUserDao.findByName - ==>  Preparing: select *from user where username like ? -- select * from user where username like CONCAT('%',?,'%') 
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@273444fe]
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@273444fe]
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 657736958 to pool.
-DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 657736958.
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@273444fe]
-DEBUG main com.jl.dao.IUserDao.findById - ==>  Preparing: SELECT *FROM USER WHERE ID = ? 
-DEBUG main com.jl.dao.IUserDao.findById - ==> Parameters: 2(Integer)
-DEBUG main com.jl.dao.IUserDao.findById - <==      Total: 1
-INFO main MybatisTest - User{id=2, username='rose', age=22, sex='女', address='上海'}
-DEBUG main com.jl.dao.IUserDao.findByName - ==>  Preparing: select * from user where username like ? -- select * from user where username like CONCAT('%',?,'%') 
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@273444fe]
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@273444fe]
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 657736958 to pool.
-DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1683662486.
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@645aa696]
-DEBUG main com.jl.dao.IUserDao.findById - ==>  Preparing: SELECT *FROM USER WHERE ID = ? 
-DEBUG main com.jl.dao.IUserDao.findById - ==> Parameters: 2(Integer)
-DEBUG main com.jl.dao.IUserDao.findById - <==      Total: 1
-INFO main MybatisTest - User{id=2, username='rose', age=22, sex='女', address='上海'}
-DEBUG main com.jl.dao.IUserDao.findByName - ==>  Preparing: select * from user where username like ? -- select * from user where username like CONCAT('%',?,'%') 
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@645aa696]
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@645aa696]
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 1683662486 to pool.
-DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 657736958.
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@273444fe]
-DEBUG main com.jl.dao.IUserDao.findById - ==>  Preparing: SELECT *FROM USER WHERE ID = ? 
-DEBUG main com.jl.dao.IUserDao.findById - ==> Parameters: 2(Integer)
-DEBUG main com.jl.dao.IUserDao.findById - <==      Total: 1
-INFO main MybatisTest - User{id=2, username='rose', age=22, sex='女', address='上海'}
-DEBUG main com.jl.dao.IUserDao.findByName - ==>  Preparing: select * from user where username like ? -- select * from user where username like CONCAT('%',?,'%') 
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@273444fe]
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@273444fe]
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 657736958 to pool.
-DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 657736958.
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@273444fe]
-DEBUG main com.jl.dao.IUserDao.findById - ==>  Preparing: SELECT *FROM USER WHERE ID = ? 
-DEBUG main com.jl.dao.IUserDao.findById - ==> Parameters: 2(Integer)
-DEBUG main com.jl.dao.IUserDao.findById - <==      Total: 1
-INFO main MybatisTest - User{id=2, username='rose', age=22, sex='女', address='上海'}
-DEBUG main com.jl.dao.IUserDao.findByName - ==>  Preparing: select * from user where username like CONCAT('%',?,'%') 
-DEBUG main com.jl.dao.IUserDao.findByName - ==> Parameters: ac(String)
-DEBUG main com.jl.dao.IUserDao.findByName - <==      Total: 1
-INFO main MybatisTest - [User{id=1, username='jack', age=24, sex='男', address='北京'}]
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@273444fe]
-DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@273444fe]
-DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 657736958 to pool.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 88646218.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@548a24a]
+DEBUG main com.jl.dao.IUserDao.findAll - ==>  Preparing: -- select * from user select u.*,a.money from user u left join account a on u.id = a.uid 
+DEBUG main com.jl.dao.IUserDao.findAll - ==> Parameters: 
+DEBUG main com.jl.dao.IUserDao.findAll - <==      Total: 8
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@548a24a]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@548a24a]
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 88646218 to pool.
+INFO main UserTest - 关流
