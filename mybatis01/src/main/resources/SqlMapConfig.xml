@@ -33,5 +33,6 @@
     <mappers>
         <mapper resource="com/jl/dao/IUserDao.xml"/>
         <mapper resource="com/jl/dao/IAccountDao.xml"/>
+        <mapper resource="com/jl/dao/IRoleDao.xml"/>
     </mappers>
 </configuration>

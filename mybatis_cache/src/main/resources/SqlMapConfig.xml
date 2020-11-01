@@ -4,6 +4,15 @@
     "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 
+    <!--配置加载-->
+    <settings>
+        <!--全局懒加载开关-->
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <setting name="aggressiveLazyLoading" value="false"/>
+        <!--二级缓存-->
+        <setting name="cacheEnabled" value="true"/>
+    </settings>
+
     <typeAliases>
         <!--
         单个别名的定义
@@ -32,7 +41,5 @@
     <!--映射配置文件位置-->
     <mappers>
         <mapper resource="com/jl/dao/IUserDao.xml"/>
-        <mapper resource="com/jl/dao/IAccountDao.xml"/>
-        <mapper resource="com/jl/dao/IRoleDao.xml"/>
     </mappers>
 </configuration>
