@@ -254,3 +254,39 @@ DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autoco
 DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@533bda92]
 DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 1396431506 to pool.
 INFO main AccountTest - 关流
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+DEBUG main org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+DEBUG main org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+DEBUG main org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/D:/workspace/java/annotion_mybatis/target/classes/com/sjl/domain
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/D:/workspace/java/annotion_mybatis/target/classes/com/sjl/domain
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: User.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Listing file:/D:/workspace/java/annotion_mybatis/target/classes/com/sjl/domain
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/D:/workspace/java/annotion_mybatis/target/classes/com/sjl/domain/User.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/D:/workspace/java/annotion_mybatis/target/classes/com/sjl/domain/User.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4 K
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class com.sjl.domain.User matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/D:/workspace/java/annotion_mybatis/target/classes/com/sjl/dao
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/D:/workspace/java/annotion_mybatis/target/classes/com/sjl/dao
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: IUserDao.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Listing file:/D:/workspace/java/annotion_mybatis/target/classes/com/sjl/dao
+DEBUG main org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/D:/workspace/java/annotion_mybatis/target/classes/com/sjl/dao/IUserDao.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/D:/workspace/java/annotion_mybatis/target/classes/com/sjl/dao/IUserDao.class
+DEBUG main org.apache.ibatis.io.DefaultVFS - Reader entry: ����   4  
+DEBUG main org.apache.ibatis.io.ResolverUtil - Checking to see if class com.sjl.dao.IUserDao matches criteria [is assignable to Object]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 495702238.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1d8bd0de]
+DEBUG main com.sjl.dao.IUserDao.findAll - ==>  Preparing: select * from user 
+DEBUG main com.sjl.dao.IUserDao.findAll - ==> Parameters: 
+DEBUG main com.sjl.dao.IUserDao.findAll - <==      Total: 7
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1d8bd0de]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1d8bd0de]
+DEBUG main org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 495702238 to pool.
