@@ -2,11 +2,13 @@ package com.sjl.dao;
 
 import com.sjl.domain.User;
 import org.apache.ibatis.annotations.*;
+import org.apache.ibatis.mapping.FetchType;
 
 import java.util.List;
 
 /**
- * @Select  @Insert  @Update  @Delete
+ *
+ *  @Select  @Insert  @Update  @Delete
  *
  * @author Administrator
  */
@@ -26,7 +28,9 @@ public interface IUserDao {
             @Result(column = "username",property = "userName"),
             @Result(column = "sex",property = "userSex"),
             @Result(column = "age",property = "userAge"),
-            @Result(column = "address",property = "userAddress")
+            @Result(column = "address",property = "userAddress"),
+            //property user对象中的account集合，column user表的主键 ， fetchType  配置懒加载和立即加载
+            @Result(property = "list",column = "id",many = @Many(select = "com.sjl.dao.IAccountDao.findByUid",fetchType = FetchType.DEFAULT))
     })
     List<User> findAll();
 

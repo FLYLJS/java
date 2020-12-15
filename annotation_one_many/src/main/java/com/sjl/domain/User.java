@@ -1,6 +1,7 @@
 package com.sjl.domain;
 
 import java.io.Serializable;
+import java.util.List;
 
 public class User implements Serializable {
 
@@ -9,6 +10,20 @@ public class User implements Serializable {
     private String userSex;
     private Integer userAge;
     private String userAddress;
+    /**
+     * 一对多关系映射
+     * 一个用户对应多个账户
+     *
+     */
+    private List<Account> list;
+
+    public List<Account> getList() {
+        return list;
+    }
+
+    public void setList(List<Account> list) {
+        this.list = list;
+    }
 
     public Integer getUserId() {
         return userId;
@@ -58,6 +73,7 @@ public class User implements Serializable {
                 ", userSex='" + userSex + '\'' +
                 ", userAge=" + userAge +
                 ", userAddress='" + userAddress + '\'' +
+                ", list=" + list +
                 '}';
     }
 }
