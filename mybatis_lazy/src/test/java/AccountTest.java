@@ -24,7 +24,7 @@ public class AccountTest {
      */
     @Test
     public void test01(){
-        System.out.println("===》"+iAccount.findAll().get(0).toString());
+//        System.out.println("===》"+iAccount.findAll().get(0).toString());
         iAccount.findAll();
     }
 
