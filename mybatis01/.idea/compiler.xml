@@ -13,8 +13,5 @@
         <module name="mybatis_cache" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="annotation_mybatis" target="8" />
-    </bytecodeTargetLevel>
   </component>
 </project>
