@@ -17,10 +17,9 @@ import java.util.List;
  */
 @Repository("accountDao")
 public class AccountDaoImpl implements IAccountDao {
+
     @Autowired
     private QueryRunner runner;
-
-
 
 
     @Override

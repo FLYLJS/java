@@ -1,13 +1,16 @@
 package com.sjl.test;
 
 import com.sjl.bean.Account;
+import com.sjl.service.IAccountService;
 import com.sjl.service.impl.AccountServiceImpl;
+import com.sjl.utils.TransactionManager;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.test.context.ContextConfiguration;
@@ -24,13 +27,16 @@ public class AccountServiceTest {
 
 //    private ApplicationContext applicationContext ;
     @Autowired
-    private AccountServiceImpl accountService ;
+    @Qualifier(value = "proxyAccountService")
+//    private AccountServiceImpl accountService ;
+    private IAccountService accountService;
 
-//    @Before
-//    public void beforeMethod(){
-//        applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
-//        accountService = applicationContext.getBean("accountService", AccountServiceImpl.class);
-//    }
+    @Test
+    public void testTransfer(){
+        accountService.transfer("aaa","bbb",100f);
+    }
+
+
     @Test
     public void testFindAll() {
         accountService.findAllAccount().stream().forEach(account-> System.out.println(account));
