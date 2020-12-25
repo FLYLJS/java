@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springioc" />
+        <module name="springanno_ioc" />
+        <module name="poi" />
+        <module name="annotation_one_many" />
+        <module name="account_annoioc" />
+        <module name="springbean" />
+        <module name="spring_account_annoioc_withxml" />
+        <module name="spring_mybatis_mvc" />
+        <module name="springdi" />
+        <module name="javase" />
+        <module name="annotion_mybatis" />
+        <module name="annotation_mybatis" />
+        <module name="mybatis_cache" />
+        <module name="mybatis01" />
+        <module name="ssm" />
+        <module name="mybatis_lazy" />
+        <module name="account_ioc" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="account_annoioc" target="8" />
+      <module name="account_ioc" target="1.5" />
+      <module name="annotation_one_many" target="8" />
+      <module name="annotion_mybatis" target="8" />
+      <module name="javase" target="8" />
+      <module name="mybatis01" target="9" />
+      <module name="mybatis_cache" target="1.5" />
+      <module name="mybatis_lazy" target="1.5" />
+      <module name="poi" target="1.5" />
+      <module name="spring_account_annoioc_withxml" target="8" />
+      <module name="spring_mybatis_mvc" target="1.7" />
+      <module name="springanno_ioc" target="1.5" />
+      <module name="springbean" target="1.5" />
+      <module name="springdi" target="1.5" />
+      <module name="springioc" target="9" />
+      <module name="ssm" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
