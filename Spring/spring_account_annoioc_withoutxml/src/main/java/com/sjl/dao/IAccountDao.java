@@ -7,7 +7,7 @@ import java.util.List;
 public interface IAccountDao {
 
     /**
-     * 岔村所有账户信息
+     * 所有账户信息
      * @return
      */
     List<Account> findAllAccount();

@@ -9,8 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
 </head>
 <body >
-<a href="/say">测试</a>
-
+<a href="/say">用户列表</a>
 
 <div style="margin:0 auto">
     <form action="/save" method="post">
@@ -20,6 +19,14 @@
         地址：<input type="text" placeholder="" name="address" value="">
         电话：<input type="text" placeholder="" name="phone" value="">
         <input type="submit" class="btn btn-default" value="提交" >
+    </form>
+<hr color="red" />
+
+    <form method="post" action="/saveStudent">
+        姓名:<input type="text" name="name">
+        年龄:<input type="text" name="age">
+        生日:<input type="text" name="date">
+        <input type="submit" value="提交">
     </form>
 </div>
 </body>

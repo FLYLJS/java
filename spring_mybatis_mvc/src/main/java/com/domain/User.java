@@ -2,7 +2,7 @@ package com.domain;
 
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("user")
 public class User {
     private Integer id;
     private String username;

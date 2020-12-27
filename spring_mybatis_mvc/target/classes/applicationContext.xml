@@ -36,20 +36,33 @@
         <property name="basePackage" value="com.mapper"/>
     </bean>
 
-<!--    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">-->
-<!--        <property name="dataSource" ref="dataSource"/>-->
-<!--    </bean>-->
-
-<!--    <tx:advice id="txAdvice" transaction-manager="transactionManager">-->
-<!--        <tx:attributes>-->
-<!--            <tx:method name="*"/>-->
-<!--        </tx:attributes>-->
-<!--    </tx:advice>-->
-
-<!--    <aop:config>-->
-<!--        <aop:pointcut id="myPointcut" expression="execution(* com.service.impl.*(..))"/>-->
-<!--        <aop:advisor advice-ref="txAdvice" pointcut-ref="myPointcut"/>-->
-<!--    </aop:config>-->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+    <!--通知-->
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+        <tx:attributes>
+            <!--事务的属性
+                 isolation=""  事务的隔离级别
+                 no-rollback-for=""
+                 propagation="" 事务传播行为，默认 REQUIRED，一定会存在事务，查询方法可以选择SUPPORTS
+                 read-only="" 事务是否只读，默认FALSE
+                 rollback-for="" 指定一个异常，该异常才会回滚
+                 timeout="" 事务超时时间，默认-1 ，永不超时，指定的话，按秒
+            -->
+            <tx:method name="find*" propagation="SUPPORTS" read-only="true"/>
+            <tx:method name="*" propagation="REQUIRED" read-only="false" />
+        </tx:attributes>
+    </tx:advice>
+    <!--aop-->
+    <aop:config>
+        <!--切入点表达式-->
+        <aop:pointcut id="pt" expression="execution(* com.service.impl.*.*(..))"/>
+        <!--切入点和事务管理器-->
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="pt"/>
+    </aop:config>
+<!--spring对注解事务的支持-->
+<!--    <tx:annotation-driven transaction-manager="transactionManager"/>-->
 
 
 </beans>
