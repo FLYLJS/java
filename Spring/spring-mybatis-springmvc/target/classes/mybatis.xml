@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+
+<!--    &lt;!&ndash;别名&ndash;&gt;-->
+<!--    <typeAliases>-->
+<!--        <typeAlias type="com.shijianlin.bean.Student" alias="student"/>-->
+<!--    </typeAliases>-->
+
+
+<!--    <mappers>-->
+<!--&lt;!&ndash;        <mapper resource="com/shijianlin/mapper/studentMapper.xml"/>&ndash;&gt;-->
+<!--        <mapper resource="com/shijianlin/mapper/StudentMapper.xml"/>-->
+<!--    </mappers>-->
+
+</configuration>

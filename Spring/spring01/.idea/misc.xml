@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/../spring-mybatis-springmvc" />
+    <file type="web" url="file://$PROJECT_DIR$/../ssm" />
+    <file type="web" url="file://$PROJECT_DIR$/../../spring_mybatis_mvc" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../springbean/pom.xml" />
+        <option value="$PROJECT_DIR$/../springdi/pom.xml" />
+        <option value="$PROJECT_DIR$/../springanno_ioc/pom.xml" />
+        <option value="$PROJECT_DIR$/../account_ioc/pom.xml" />
+        <option value="$PROJECT_DIR$/../account_annoioc/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring_account_annoioc_withxml/pom.xml" />
+        <option value="$PROJECT_DIR$/../account/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring_account_annoioc_withoutxml/pom.xml" />
+        <option value="$PROJECT_DIR$/../proxy/pom.xml" />
+        <option value="$PROJECT_DIR$/../../spring_mybatis_mvc/pom.xml" />
+        <option value="$PROJECT_DIR$/../ssm/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring-mybatis-springmvc/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_14" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
