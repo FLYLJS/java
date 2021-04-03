@@ -13,6 +13,7 @@
         <option value="$PROJECT_DIR$/../ssoserver/pom.xml" />
         <option value="$PROJECT_DIR$/../client-crm/pom.xml" />
         <option value="$PROJECT_DIR$/../../Spring/springioc/pom.xml" />
+        <option value="$PROJECT_DIR$/../jvm/pom.xml" />
       </list>
     </option>
   </component>

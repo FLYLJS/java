@@ -6,17 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring01" />
-        <module name="springdi" />
+        <module name="proxy" />
         <module name="spring_mybatis_mvc" />
         <module name="account" />
         <module name="springbean" />
-        <module name="spring_account_annoioc_withoutxml" />
-        <module name="proxy" />
-        <module name="account_ioc" />
         <module name="account_annoioc" />
+        <module name="springdi" />
+        <module name="account_ioc" />
+        <module name="spring01" />
         <module name="spring-mybatis-springmvc" />
         <module name="springanno_ioc" />
+        <module name="spring_account_annoioc_withoutxml" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

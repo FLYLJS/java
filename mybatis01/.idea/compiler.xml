@@ -9,9 +9,14 @@
         <module name="mybatis_lazy" />
         <module name="annotation_one_many" />
         <module name="mybatis01" />
-        <module name="annotation_mybatis" />
+        <module name="spring_mybatis_springmvc" />
         <module name="mybatis_cache" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="annotation_mybatis" target="8" />
+      <module name="spring_mybatis_springmvc" target="1.5" />
+      <module name="ssm" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>

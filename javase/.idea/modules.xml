@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../client-crm/client-crm.iml" filepath="$PROJECT_DIR$/../client-crm/client-crm.iml" />
       <module fileurl="file://$PROJECT_DIR$/javase.iml" filepath="$PROJECT_DIR$/javase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../jvm/jvm.iml" filepath="$PROJECT_DIR$/../jvm/jvm.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../Spring/springioc/springioc.iml" filepath="$PROJECT_DIR$/../../Spring/springioc/springioc.iml" />
       <module fileurl="file://$PROJECT_DIR$/../sso/sso.iml" filepath="$PROJECT_DIR$/../sso/sso.iml" />
       <module fileurl="file://$PROJECT_DIR$/../ssoserver/ssoserver.iml" filepath="$PROJECT_DIR$/../ssoserver/ssoserver.iml" />

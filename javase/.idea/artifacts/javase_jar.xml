@@ -1,8 +1,9 @@
 <component name="ArtifactManager">
   <artifact type="jar" build-on-make="true" name="javase.jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/javase_jar</output-path>
+    <output-path>C:/Users/Public/Desktop/javase_jar</output-path>
     <root id="archive" name="javase.jar">
       <element id="module-output" name="javase" />
+      <element id="module-source" name="javase" />
     </root>
   </artifact>
 </component>
