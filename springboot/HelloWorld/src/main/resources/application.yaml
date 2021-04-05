@@ -1,0 +1,49 @@
+server:
+  port: 8080
+
+#对象
+studentA:
+  name: AA
+  age: 3
+
+#行内写法
+studentB: {name: BB,age: 3}
+
+#数组
+animalA: [pig,dog,cat]
+#
+animalB:
+  - cat
+  - pig
+  - dog
+
+
+person:
+  name: ${random.uuid}
+  age: 4
+  birth: 2021/4/4
+  maps: {k1: v1,k2: v2}
+  lists: [girl,music,java]
+  dog:
+    #使用占位符
+    name: ${person.age:${random.long}}_旺财
+    age: 4
+  email: 123456@163.com
+
+#springboot的多环境切换,可以选择切换到哪个环境
+spring:
+  profiles:
+    active: test
+
+#yaml文件中可以使用---分割环境
+---
+server:
+  port: 8081
+# 多环境文件名
+spring:
+  profiles: dev
+---
+server:
+  port: 8082
+spring:
+  profiles: test
